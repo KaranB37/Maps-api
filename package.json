@@ -1,0 +1,15 @@
+{
+  "name": "location-address-flow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react-router-dom": "^7.1.1"
+  }
+}
