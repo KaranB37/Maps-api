@@ -135,12 +135,7 @@ const App = () => {
               />
               <Route
                 path="/search"
-                element={
-                  <SearchPage
-                    onLocationChange={handleLocationChange}
-                    onAddressSelect={handleAddressSelect}
-                  />
-                }
+                element={<SearchPage onLocationChange={handleLocationChange} />}
               />
             </Routes>
           </>

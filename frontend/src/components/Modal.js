@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Modal = ({ onEnableLocation, onSearchManually }) => (
   <div
@@ -35,20 +36,21 @@ const Modal = ({ onEnableLocation, onSearchManually }) => (
     >
       Enable Location
     </button>
-    <button
-      onClick={onSearchManually}
-      style={{
-        width: "100%",
-        padding: "10px",
-        backgroundColor: "#6c757d",
-        color: "#fff",
-        border: "none",
-        borderRadius: "4px",
-        cursor: "pointer",
-      }}
-    >
-      Search Your Location Manually
-    </button>
+    {/* <Link to="/search" onClick={onSearchManually}>
+      <button
+        style={{
+          width: "100%",
+          padding: "10px",
+          backgroundColor: "#6c757d",
+          color: "#fff",
+          border: "none",
+          borderRadius: "4px",
+          cursor: "pointer",
+        }}
+      >
+        Search Your Location Manually
+      </button>
+    </Link> */}
   </div>
 );
 

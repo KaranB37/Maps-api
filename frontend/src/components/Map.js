@@ -81,9 +81,9 @@ const Map = ({ onLocationChange, onAddressSelect }) => {
             position={position}
             label={{
               text: deliveryMessage,
-              color: "white",
+              color: "red",
               fontWeight: "bold",
-              fontSize: "14px",
+              fontSize: "10px",
               fontFamily: "Arial",
             }}
             icon={{
