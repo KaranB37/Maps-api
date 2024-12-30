@@ -4,6 +4,7 @@ import AddressForm from "./components/AddressForm";
 import Map from "./components/Map";
 import Modal from "./components/Modal";
 import AddressListPage from "./components/AddressListPage";
+import SearchPage from "./components/SearchPage";
 import axios from "axios";
 
 const App = () => {
@@ -129,6 +130,15 @@ const App = () => {
                   <AddressListPage
                     addresses={addresses}
                     deleteAddress={deleteAddress}
+                  />
+                }
+              />
+              <Route
+                path="/search"
+                element={
+                  <SearchPage
+                    onLocationChange={handleLocationChange}
+                    onAddressSelect={handleAddressSelect}
                   />
                 }
               />
