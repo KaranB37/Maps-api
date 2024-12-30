@@ -8,7 +8,7 @@ const Map = ({ onLocationChange, onAddressSelect }) => {
   const [deliveryMessage, setDeliveryMessage] = useState("");
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyDCiZja_eHzHOlrAvl2Maiyo3f9cq63DJA",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries: ["places"],
   });
 
